@@ -1,0 +1,23 @@
+{% extends "bootstrap/base.html" %}
+{% block body %}
+
+<H1> Top 100 movies to watch on Amazon Prime (September 2021) </H1>
+
+<table border="1">
+    {% for doc in records %}
+        {% for key,value in doc.items() %}
+    <tr>
+        <th>
+            {{key}}
+        </th>
+
+        <td>
+            {{value}}
+        </td>
+    </tr>
+
+        {% endfor %}
+    {% endfor %}
+</table>
+
+{% endblock %}

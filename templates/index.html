@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends "bootstrap/base.html" %}
+{% block body %}
+
+<H1> Top 100 movies to watch on Amazon Prime</H1>
+<H2>Create, Retrieve, Update & Delete Records</H2>
+
+<style>
+body {
+  background-image: url('amazon1.png');
+}
+</style>
+<button>
+    <a href="{{ url_for('.readdata') }}">
+        Read
+    </a>
+</button>
+
+<button>
+    <a href="{{ url_for('.create') }}">
+        Create
+    </a>
+</button>
+
+<button>
+    <a href="{{ url_for('.delete') }}">
+        Delete
+    </a>
+</button>
+
+{% endblock %}

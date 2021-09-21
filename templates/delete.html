@@ -1,0 +1,38 @@
+{% extends "bootstrap/base.html" %}
+{% block body %}
+
+<H1> Delete Record </H1>
+<H2> Please enter fields of record to be deleted</H2>
+
+<form action = "" method = "post">
+
+    <p>
+        {{forms.Title.label}} <br>
+        {{forms.Title(size=80)}}
+    </p>
+
+    <p>
+        {{forms.Director.label}} <br>
+        {{forms.Director(size=30)}}
+    </p>
+
+    <p>
+        {{forms.Rank.label}} <br>
+        {{forms.Rank(size=30)}}
+    </p>
+
+    <p>
+        {{forms.Rating.label}} <br>
+        {{forms.Rating(size=30)}}
+    </p>
+
+    <p>
+        {{forms.Year.label}} <br>
+        {{forms.Year(size=30)}}
+    </p>
+
+    <p>
+        {{forms.Submit}} <br>
+    </p>
+</form>
+{% endblock %}
